@@ -1,4 +1,4 @@
-# Program to send if the number is power of 4 or not
+# Program to send if the number is power of 8 or not
 
 # Take input
 n = int(input("enter your number: "))
@@ -10,11 +10,11 @@ def checkifpower(n):
     # If we reach lowest power of n return true
     if(n == 1):
         return True
-    if (n%4 == 0):
-        return checkifpower(n / 4)
+    if (n%8 == 0):
+        return checkifpower(n / 8)
     return False
 
 if(checkifpower(n)):
-    print("Power of 4")
+    print("Power of 8")
 else:
-    print("Not power of 4")
+    print("Not power of 8")
